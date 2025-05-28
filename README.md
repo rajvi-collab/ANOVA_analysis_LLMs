@@ -1,1 +1,9 @@
 # ANOVA_analysis_LLMs
+
+As generative AI tools become increasingly common in software development, there's a growing need to understand how well these tools actually perform beyond just producing code that runs. This thesis explores how four popular generative AI models ChatGPT (GPT-4-o mini), GitHub Copilot, Code LLaMA 3.3, and DeepSeek Web compare in generating code that is not only correct but also efficient and maintainable.
+
+To do this, we tested each model on six real-world-style coding problems sourced from LeetCode, covering a range of algorithmic challenges like dynamic programming, graph traversal, and array manipulation. Using a consistent prompting strategy, we collected code samples from each model and evaluated them using established software engineering metrics: Lines of Code, Cyclomatic Complexity, Halstead Complexity, and the Maintainability Index. We then applied a detailed statistical analysis, including ANOVA, post-hoc testing, and non-parametric methods, to see which models consistently performed best.
+
+Our results show that the type of problem has the biggest impact on code complexity and length—but when it comes to how maintainable the code is, the AI model itself matters a lot. LLaMA produced the most maintainable code across the board, while GitHub Copilot often generated more complex, harder-to-maintain solutions. ChatGPT and DeepSeek showed similar and generally solid performance, landing somewhere in the middle.
+
+This research goes beyond simple pass/fail benchmarks and provides a clearer, more nuanced understanding of how generative AI tools behave in practical programming tasks. Developers, educators, and toolmakers can use these findings to choose the right AI assistant for their needs—and to better understand where these models shine and where they still fall short.
